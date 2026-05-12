@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exoplanet Discovery Trends | Siddhesh Badani</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+body {
+  min-height: 100vh;
+  background: linear-gradient(150deg, #0f3460 0%, #16213e 60%, #0a0a15 100%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  gap: 0;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 760px;
+}
+
+/* ── Title block ── */
+.title-block {
+  text-align: center;
+}
+.eyebrow {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #7eb8f7;
+  margin-bottom: 0.75rem;
+}
+.title-block h1 {
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 0.9rem;
+}
+.title-block p {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.65;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* ── Cards ── */
+.cards {
+  display: flex;
+  gap: 1.25rem;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  flex: 1;
+  min-width: 240px;
+  max-width: 340px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 14px;
+  padding: 2rem 1.75rem;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  transition: background 0.2s, border-color 0.2s, transform 0.15s, box-shadow 0.2s;
+}
+.card:hover {
+  background: rgba(255,255,255,0.09);
+  border-color: rgba(126,184,247,0.45);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.35);
+}
+.card-icon {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+.card h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.card p {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.5;
+}
+.card-arrow {
+  margin-top: auto;
+  padding-top: 1rem;
+  font-size: 0.78rem;
+  color: #7eb8f7;
+  font-weight: 500;
+}
+
+/* ── Footer ── */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 1.5rem;
+}
+.stack {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.pill {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 0.2rem 0.65rem;
+  font-size: 0.68rem;
+  color: rgba(255,255,255,0.55);
+}
+.portfolio-link {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.4);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+.portfolio-link:hover { color: rgba(255,255,255,0.8); }
+</style>
+</head>
+<body>
+
+<div class="landing">
+  <div class="title-block">
+    <div class="eyebrow">Data Analytics Project</div>
+    <h1>Exoplanet Discovery Trends</h1>
+    <p>35 years of planetary detection history. How Kepler, K2 and TESS reshaped the rate and method of exoplanet discovery using NASA's Exoplanet Archive.</p>
+  </div>
+
+  <div class="cards">
+    <a class="card" href="story.html">
+      <div class="card-icon">📖</div>
+      <h2>Visual Story</h2>
+      <p>A narrative walk-through of the data. Chapters cover the pre-Kepler era through the TESS era with annotated charts.</p>
+      <div class="card-arrow">Read the story →</div>
+    </a>
+    <a class="card" href="dashboard.html">
+      <div class="card-icon">📊</div>
+      <h2>Interactive Dashboard</h2>
+      <p>Explore all charts directly. Filter by detection method, mission and year across 6,286 confirmed planets.</p>
+      <div class="card-arrow">Open dashboard →</div>
+    </a>
+  </div>
+
+  <footer>
+    <div class="stack">
+      <span class="pill">Python</span>
+      <span class="pill">Pandas</span>
+      <span class="pill">Plotly</span>
+      <span class="pill">NASA TAP API</span>
+    </div>
+    <a class="portfolio-link" href="https://siddhesh.org/projects" target="_blank" rel="noopener">siddhesh.org/projects ↗</a>
+  </footer>
+</div>
+
+</body>
+</html>

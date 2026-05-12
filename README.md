@@ -1,3 +1,5 @@
+Access final project webpage builds at: https://projects.siddhesh.org/exoplanet-discovery-trends
+
 # Exoplanet Discovery Trends
 
 A data analytics project that surfaces 35 years of planetary detection history using real data from NASA's Exoplanet Archive. The visual output answers one central question: how did Kepler, K2 and TESS reshape the rate and method of exoplanet discovery?
@@ -106,7 +108,6 @@ Queried via TAP API: `https://exoplanetarchive.ipac.caltech.edu/TAP/sync`
 Citation: NASA Exoplanet Archive. (2024). Planetary Systems. IPAC. https://doi.org/10.26133/NEA12
 
 ---
-
 
 ## Author
 
